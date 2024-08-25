@@ -1,0 +1,24 @@
+bool isAlphanumeric(char s) {
+    return isalnum(s);
+}
+char tolowercase(char s){
+    return tolower(s);
+}
+bool isPalindrome(char *s) {
+    int left = 0;
+    int right = strlen(s) - 1;
+    while (left < right) {
+        while (left < right && !isAlphanumeric(s[left])) {
+            left++;
+        }
+            while (left < right && !isAlphanumeric(s[right])) {
+            right--;
+        }
+        if (tolowercase(s[left]) != tolowercase(s[right])) {
+            return false;
+        }
+        left++;
+        right--;
+    }
+    return true;
+}
