@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    double base,expo;
+    double power;
+    printf("Enter the value of base");
+    scanf("%lf",&base);
+    printf("Enter the value of exponent");
+    scanf("%lf",&expo);
+    power=pow(base,expo);
+    printf("The power value is %2.f",power);
+    return 0;
+}
