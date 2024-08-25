@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+    int n;
+    int fn;
+    printf("Enter a num");
+    scanf("%d",&n);
+    fn=n;
+    while(fn>=10)
+    {
+    fn=fn/10;
+}
+    printf("First digit is %d",fn);
+    return 0;
+}
